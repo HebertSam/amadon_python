@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    {%load static%}
+</head>
+<body>
+    <h1>Thank you for your business!</h1>
+    
+    <h3>We charged your credit card for ${{request.session.item_price}}</h3>
+
+    <h4>You have ordered {{request.session.count}} items so far and spent ${{request.session.total}} with Amadon.com</h4>
+
+    <a href="/">Buy More</a>
+
+    <a href="/clear">Clear purchase history</a>
+</body>
+</html>
